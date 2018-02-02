@@ -27,47 +27,27 @@ var template = React.createElement(
 		null,
 		app.options.length > 0 ? 'Here are your options:' : 'No options'
 	)
-); //JSX expression, скобки для группировки
+);
 
-var user = {
-	name: 'Дарт Вейдер',
-	age: 34,
-	location: 'Moscow'
-};
-
+var count = 0;
 var templateTwo = React.createElement(
 	'div',
 	null,
 	React.createElement(
 		'h1',
 		null,
-		user.name
+		' Count: ',
+		count,
+		' '
 	),
 	React.createElement(
-		'p',
-		null,
-		'Age: ',
-		user.age
-	),
-	React.createElement(
-		'p',
-		null,
-		'Location: ',
-		user.location
+		'button',
+		{ id: 'button', className: 'button' },
+		'+1'
 	)
 );
-
-//arrow fucntion declaration
-var getFirstName = function getFirstName(name) {
-	return name.split(' ')[0];
-};
-// arrow function expression
-var getFirstNameE = function getFirstNameE(name) {
-	return name.split(' ')[0];
-};
-
-console.log(getFirstNameE(user.name));
+console.log(templateTwo);
 
 var appRoot = document.getElementById('app');
 
-ReactDOM.render(template, appRoot);
+ReactDOM.render(templateTwo, appRoot);
