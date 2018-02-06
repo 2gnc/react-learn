@@ -1,28 +1,58 @@
 const app = {
 	title: 'Indecision App',
-	subtitle: 'This is some info.',
-	options: [ 'One', 'Two' ]
+	subtitle: 'Put your life in the hands of a computer',
+	options: [  ]
 }
 
-const template = (
-	<div>
-		<h1>{ app.title }</h1>
-		{ app.subtitle && <p> { app.subtitle } </p> } {/* проверяем, есть ли подзаголовок, и если есть - выводим*/}
-		<p>{ app.options.length > 0 ? 'Here are your options:' : 'No options' }</p>
+const onFormSubmit = (e) => {
+	e.preventDefault(); 
 
-	</div>
-); 
+	const option = e.target.elements.option.value;
 
+	if ( option ) {
+		app.options.push( option );
+		e.target.elements.option.value = '';
+		render();
+	};
 
-let count = 0;
-const templateTwo = (
-	<div>
-		<h1> Count: {count} </h1>
-		<button id="button" className="button">+1</button>
-	</div>
-	);
-console.log( templateTwo );
+};
+
+const removeAll = (e) => {
+	if ( app.options.length > 0 ) {
+		app.options = [];
+		render();
+	};
+};
+
+const onMakeDecision = () => {
+	const randomNum = Math.floor(Math.random() * app.options.length);
+	const option = app.options[randomNum];
+	console.log( option );
+};
 
 const appRoot = document.getElementById( 'app' );
 
-ReactDOM.render( templateTwo, appRoot );
+const render = () => {
+
+	const template = (
+		<div>
+			<h1>{ app.title }</h1>
+			{ app.subtitle && <p> { app.subtitle } </p> } {/* проверяем, есть ли подзаголовок, и если есть - выводим*/}
+			<p>{ app.options.length > 0 ? 'Here are your options:' : 'Here are no options' }</p>
+			<button disabled={ app.options.length === 0 } onClick ={onMakeDecision} >What should I do?</button>
+			<button onClick = {removeAll} >Remove all</button>
+			<ol>
+				{
+					app.options.map( ( option, i ) => <li key = {i}> {option} </li> ) //сокращенная запись стрелочной функции
+				}
+			</ol>
+			<form onSubmit={ onFormSubmit } >
+				<input type="text" name="option" />
+				<button>Add Option</button>
+			</form>
+		</div>
+);
+	ReactDOM.render( template, appRoot );
+};
+
+render();
