@@ -4,13 +4,12 @@ class Person {
 		this.age = age;
 	}
 	getGreeting() {
-		return `Hi ${ this.name } `;
+		return `Hi i'm ${ this.name }. `;
 	}
 	getDeacription() {
 		return `${this.name} is ${this.age} year(s) old`;
 	}
 }
-
 class Student extends Person {
 	constructor( name, age, major ) {
 		super( name, age ); 
@@ -27,10 +26,20 @@ class Student extends Person {
 		return description;
 	}
 }
+class Traveler extends Person {
+	constructor( name, age, homeLocation ) {
+		super( name, age );
+		this.homeLocation = homeLocation;
+	}
+	getGreeting() {
+		let greeting = super.getGreeting();
+		if( !!this.homeLocation ) {
+			greeting += ` I am visiting from ${this.homeLocation}.`
+		}
+		return greeting;
+	};
+}
+const me = new Traveler( 'Ksenia', 35, 'Secret');
+console.log( me );
+console.log( me.getGreeting() );
 
-const me = new Student( 'Ksenia', 35 );
-const other = new Student();
-const va = new Student( 'Vasya', 25, 'Programmer' );
-
-console.log( me.getDeacription() );
-console.log( va.getDeacription() );
