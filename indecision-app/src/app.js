@@ -29,7 +29,7 @@ class Header extends React.Component {
 class Action extends React.Component {
 
 	handlePick() {
-		console.log( 'handlePick' );
+		console.log( 'handlePick1' );
 	}
 
 	render() {
