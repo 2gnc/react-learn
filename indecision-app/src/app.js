@@ -3,8 +3,9 @@ class IndecisionApp extends React.Component {
 		super( props );
 		this.handleDeleteOptions = this.handleDeleteOptions.bind( this );
 		this.handlePick = this.handlePick.bind( this );
+		this.handleAddOption = this.handleAddOption.bind( this );
 		this.state = {
-			options: [ 'one option', 'two option', 'three option' ],
+			options: [  ],
 		};
 	}
 
@@ -20,8 +21,20 @@ class IndecisionApp extends React.Component {
 		if ( this.state.options.length ) {
 			const rand = Math.floor(Math.random() * this.state.options.length);
 			const option = this.state.options[rand];
-			console.log( option );
 		}
+	}
+
+	handleAddOption( option ) {
+		if( !option ) {
+			return 'Enter valid value item';
+		} else if ( this.state.options.indexOf( option ) > -1 ) {
+			return 'This option already exists';
+		}
+		this.setState( (prevState) => {
+			return {
+				options: prevState.options.concat( option ),
+			};
+		} );
 	}
 
 	render() {
@@ -39,7 +52,9 @@ class IndecisionApp extends React.Component {
 					options = {this.state.options}
 					handleDeleteOptions = { this.handleDeleteOptions }
 				/>
-				<AddOption />
+				<AddOption
+					handleAddOption = { this.handleAddOption }
+				/>
 			</div>
 		);
 	}
@@ -98,23 +113,34 @@ class Options extends React.Component {
 
 class AddOption extends React.Component {
 
-	onFormSubmit( e ) {
+	constructor( props ) {
+		super( props );
+		this.handleAddOption = this.handleAddOption.bind( this );
+		this.state = {
+			error: undefined,
+		}
+	}
+
+	handleAddOption( e ) {
 
 		e.preventDefault();
-
 		const option = e.target.elements.option.value.trim();
 
-		if ( option ) {
-			console.log( option );
-			e.target.elements.option.value = '';
-		}
-		
+		const error = this.props.handleAddOption( option );
+		e.target.elements.option.value = '';
+
+		this.setState( () => {
+			return {
+				error, 
+			}
+		});
 	}
 
 	render() {
 		return (
 			<div>
-				<form onSubmit = { this.onFormSubmit } >
+				{ this.state.error && <p> {this.state.error} </p> }
+				<form onSubmit = { this.handleAddOption } >
 					<input type = "text" name = "option" />
 					<button>Add Option</button>
 				</form>
