@@ -50,7 +50,7 @@ class IndecisionApp extends React.Component {
 					handlePick = { this.handlePick }
 				/>
 				<Options 
-					options = {this.state.options}
+					options = { this.state.options }
 					handleDeleteOptions = { this.handleDeleteOptions }
 				/>
 				<AddOption
