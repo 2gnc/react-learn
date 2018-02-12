@@ -21,6 +21,7 @@ class IndecisionApp extends React.Component {
 		if ( this.state.options.length ) {
 			const rand = Math.floor(Math.random() * this.state.options.length);
 			const option = this.state.options[rand];
+			console.log( option );
 		}
 	}
 
@@ -60,55 +61,45 @@ class IndecisionApp extends React.Component {
 	}
 }
 
-class Header extends React.Component {
-	render() {
-		return (
-			<div>
-				<h1>{this.props.title}</h1>
-				<h2>{this.props.subtitle}</h2>
-			</div>
-		);
-	}
-}
-
-class Action extends React.Component {
-
-	render() {
-		return (
-			<div>
-				<button 
-					onClick = { this.props.handlePick } 
-					disabled = { !this.props.hasOptions }
-				>
-					What should I do?
-				</button>
-			</div>
-		);
-	}
-}
-
-class Option extends React.Component {
-	render() {
-		return (
-			<div>
-				Option: { this.props.option }
-			</div>
-			)
-	}
-}
-
-class Options extends React.Component {
-
-	render() {
-		return (
-			<div>
-				<button onClick = { this.props.handleDeleteOptions }> Remove all </button>
-				{ 
-					this.props.options.map( (opt, i) => <Option key={i} option = {opt} /> )
-				}
+const Header = ( props ) => {
+	return (
+		<div>
+			<h1>{ props.title }</h1>
+			<h2>{ props.subtitle }</h2>
 		</div>
-		);
-	}
+	);
+}
+
+const Action = ( props ) => {
+	return (
+		<div>
+			<button 
+				onClick = { props.handlePick } 
+				disabled = { !props.hasOptions }
+			>
+				What should I do?
+			</button>
+		</div>
+	);
+};
+
+const Option = ( props ) => {
+	return (
+		<div>
+			Option: { props.option }
+		</div>
+	)
+}
+
+const Options = ( props ) => {
+	return (
+		<div>
+			<button onClick = { props.handleDeleteOptions }> Remove all </button>
+			{ 
+				props.options.map( (opt, i) => <Option key={i} option = {opt} /> )
+			}
+		</div>
+	);
 }
 
 class AddOption extends React.Component {
