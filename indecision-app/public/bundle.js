@@ -74,7 +74,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 console.log( 'app.js is runnig' );
 console.log( __WEBPACK_IMPORTED_MODULE_0__utils_js__["b" /* square */]( 4 ) );
-console.log( __WEBPACK_IMPORTED_MODULE_0__utils_js__["a" /* add */]( 100, 23 ) );
+console.log( __WEBPACK_IMPORTED_MODULE_0__utils_js__["a" /* add */]( 100, 25 ) );
 
 /***/ }),
 /* 1 */
