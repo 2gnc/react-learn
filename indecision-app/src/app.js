@@ -1,14 +1,9 @@
-import subs, { square, add } from './utils.js'
+import validator from 'validator';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-console.log( 'app.js is runnig' );
-console.log( square( 4 ) );
-console.log( add( 100, 25 ) );
+console.log( validator.isEmail( 'test-a@gmail.com' ) );
 
-import { isAdult, canDrink } from './person.js';
+const template = React.createElement( 'p', {}, 'test' );
 
-console.log( canDrink(12), isAdult(18), canDrink(100) );
-console.log( subs( 100, 20) );
-
-import isSenior from './person.js';
-
-console.log( isSenior(64) );
+ReactDOM.render( template, document.getElementById( 'app' ) );
