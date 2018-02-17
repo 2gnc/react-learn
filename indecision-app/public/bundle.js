@@ -1570,25 +1570,34 @@ module.exports = focusNode;
 
 /***/ }),
 /* 30 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_validator__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_validator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_validator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_dom__);
 
 
+var _validator = __webpack_require__(31);
 
+var _validator2 = _interopRequireDefault(_validator);
 
-console.log( __WEBPACK_IMPORTED_MODULE_0_validator___default.a.isEmail( 'test-a@gmail.com' ) );
+var _react = __webpack_require__(9);
 
-const template = __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement( 'p', {}, 'test' );
+var _react2 = _interopRequireDefault(_react);
 
-__WEBPACK_IMPORTED_MODULE_2_react_dom___default.a.render( template, document.getElementById( 'app' ) );
+var _reactDom = __webpack_require__(83);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log(_validator2.default.isEmail('test-a@gmail.com'));
+
+var template = _react2.default.createElement(
+  'p',
+  null,
+  'tesst!'
+);
+
+_reactDom2.default.render(template, document.getElementById('app'));gst;
 
 /***/ }),
 /* 31 */

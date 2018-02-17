@@ -4,6 +4,6 @@ import ReactDOM from 'react-dom';
 
 console.log( validator.isEmail( 'test-a@gmail.com' ) );
 
-const template = React.createElement( 'p', {}, 'test' );
+const template = <p>tesst!</p>;
 
-ReactDOM.render( template, document.getElementById( 'app' ) );
+ReactDOM.render( template, document.getElementById( 'app' ) );gst
