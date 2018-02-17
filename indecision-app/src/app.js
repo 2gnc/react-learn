@@ -1,5 +1,9 @@
-import { square, add } from './utils.js'
+// import { square, add } from './utils.js'
+//
+// console.log( 'app.js is runnig' );
+// console.log( square( 4 ) );
+// console.log( add( 100, 25 ) );
 
-console.log( 'app.js is runnig' );
-console.log( square( 4 ) );
-console.log( add( 100, 25 ) );
+import { isAdult, canDrink } from './person.js';
+
+console.log( canDrink(12), isAdult(18), canDrink(100) );
