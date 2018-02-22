@@ -60,12 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 30);
+/******/ 	return __webpack_require__(__webpack_require__.s = 14);
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */,
-/* 1 */
+/* 0 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -255,7 +254,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 2 */
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -297,8 +296,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 module.exports = emptyFunction;
 
 /***/ }),
-/* 3 */,
-/* 4 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -395,7 +393,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 /***/ }),
-/* 5 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -416,28 +414,25 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = emptyObject;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(80);
+  module.exports = __webpack_require__(15);
 } else {
-  module.exports = __webpack_require__(81);
+  module.exports = __webpack_require__(16);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 10 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -494,10 +489,10 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 11 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -511,7 +506,7 @@ module.exports = invariant;
 
 
 
-var emptyFunction = __webpack_require__(2);
+var emptyFunction = __webpack_require__(1);
 
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
@@ -563,21 +558,10 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = warning;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */,
-/* 21 */,
-/* 22 */,
-/* 23 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -591,9 +575,9 @@ module.exports = warning;
 
 
 if (process.env.NODE_ENV !== 'production') {
-  var invariant = __webpack_require__(10);
-  var warning = __webpack_require__(11);
-  var ReactPropTypesSecret = __webpack_require__(82);
+  var invariant = __webpack_require__(5);
+  var warning = __webpack_require__(6);
+  var ReactPropTypesSecret = __webpack_require__(17);
   var loggedTypeFailures = {};
 }
 
@@ -641,10 +625,10 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 
 module.exports = checkPropTypes;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 24 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -683,7 +667,7 @@ var ExecutionEnvironment = {
 module.exports = ExecutionEnvironment;
 
 /***/ }),
-/* 25 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -698,7 +682,7 @@ module.exports = ExecutionEnvironment;
  * @typechecks
  */
 
-var emptyFunction = __webpack_require__(2);
+var emptyFunction = __webpack_require__(1);
 
 /**
  * Upstream version of event listener. Does not take into account specific
@@ -761,10 +745,10 @@ var EventListener = {
 };
 
 module.exports = EventListener;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 26 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -806,7 +790,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 module.exports = getActiveElement;
 
 /***/ }),
-/* 27 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -877,7 +861,7 @@ function shallowEqual(objA, objB) {
 module.exports = shallowEqual;
 
 /***/ }),
-/* 28 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -892,7 +876,7 @@ module.exports = shallowEqual;
  * 
  */
 
-var isTextNode = __webpack_require__(85);
+var isTextNode = __webpack_require__(20);
 
 /*eslint-disable no-bitwise */
 
@@ -920,7 +904,7 @@ function containsNode(outerNode, innerNode) {
 module.exports = containsNode;
 
 /***/ }),
-/* 29 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -950,339 +934,30 @@ function focusNode(node) {
 module.exports = focusNode;
 
 /***/ }),
-/* 30 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(9);
+var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(83);
+var _reactDom = __webpack_require__(18);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _IndecisionApp = __webpack_require__(32);
+
+var _IndecisionApp2 = _interopRequireDefault(_IndecisionApp);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var IndecisionApp = function (_React$Component) {
-	_inherits(IndecisionApp, _React$Component);
-
-	function IndecisionApp(props) {
-		_classCallCheck(this, IndecisionApp);
-
-		var _this = _possibleConstructorReturn(this, (IndecisionApp.__proto__ || Object.getPrototypeOf(IndecisionApp)).call(this, props));
-
-		_this.handleDeleteOptions = _this.handleDeleteOptions.bind(_this);
-		_this.handleDeleteOption = _this.handleDeleteOption.bind(_this);
-		_this.handlePick = _this.handlePick.bind(_this);
-		_this.handleAddOption = _this.handleAddOption.bind(_this);
-		_this.state = {
-			options: props.options
-		};
-		return _this;
-	}
-
-	_createClass(IndecisionApp, [{
-		key: 'componentDidMount',
-		value: function componentDidMount() {
-			try {
-				var json = localStorage.getItem('options');
-				var options = JSON.parse(json);
-				if (options) {
-					this.setState(function () {
-						return { options: options };
-					});
-				}
-			} catch (e) {}
-		}
-	}, {
-		key: 'componentDidUpdate',
-		value: function componentDidUpdate(prevProps, prevState) {
-			if (prevState.options.length !== this.state.options.length) {
-				var json = JSON.stringify(this.state.options);
-				localStorage.setItem('options', json);
-			}
-		}
-	}, {
-		key: 'handleDeleteOptions',
-		value: function handleDeleteOptions() {
-			this.setState(function () {
-				return { options: [] };
-			});
-		}
-	}, {
-		key: 'handleDeleteOption',
-		value: function handleDeleteOption(optionToRemove) {
-
-			this.setState(function (prevState) {
-				return {
-					options: prevState.options.filter(function (option) {
-						return optionToRemove !== option;
-					})
-				};
-			});
-		}
-	}, {
-		key: 'handlePick',
-		value: function handlePick() {
-			if (this.state.options.length) {
-				var rand = Math.floor(Math.random() * this.state.options.length);
-				var option = this.state.options[rand];
-				console.log(option);
-			}
-		}
-	}, {
-		key: 'handleAddOption',
-		value: function handleAddOption(option) {
-			if (!option) {
-				return 'Enter valid value item';
-			} else if (this.state.options.indexOf(option) > -1) {
-				return 'This option already exists';
-			}
-
-			this.setState(function (prevState) {
-				return { options: prevState.options.concat(option) };
-			});
-		}
-	}, {
-		key: 'render',
-		value: function render() {
-			var title = 'Indecision App';
-			var subtitle = 'Put your life in the hands of a computer';
-
-			return _react2.default.createElement(
-				'div',
-				null,
-				_react2.default.createElement(Header, {
-					title: title,
-					subtitle: subtitle
-				}),
-				_react2.default.createElement(Action, {
-					hasOptions: this.state.options.length > 0,
-					handlePick: this.handlePick
-				}),
-				_react2.default.createElement(Options, {
-					options: this.state.options,
-					handleDeleteOptions: this.handleDeleteOptions,
-					handleDeleteOption: this.handleDeleteOption
-				}),
-				_react2.default.createElement(AddOption, {
-					handleAddOption: this.handleAddOption
-				})
-			);
-		}
-	}]);
-
-	return IndecisionApp;
-}(_react2.default.Component);
-
-IndecisionApp.defaultProps = {
-	options: []
-};
-
-var Header = function Header(props) {
-	return _react2.default.createElement(
-		'div',
-		null,
-		_react2.default.createElement(
-			'h1',
-			null,
-			props.title
-		),
-		props.subtitle && _react2.default.createElement(
-			'h2',
-			null,
-			props.subtitle
-		)
-	);
-};
-
-Header.defaultProps = {
-	title: 'Some Deafult!'
-};
-
-var Action = function Action(props) {
-	return _react2.default.createElement(
-		'div',
-		null,
-		_react2.default.createElement(
-			'button',
-			{
-				onClick: props.handlePick,
-				disabled: !props.hasOptions
-			},
-			'What should I do?'
-		)
-	);
-};
-
-var Option = function Option(props) {
-	return _react2.default.createElement(
-		'div',
-		null,
-		props.option,
-		_react2.default.createElement(
-			'button',
-			{
-				onClick: function onClick(e) {
-					props.handleDeleteOption(props.option);
-				}
-			},
-			'remove'
-		)
-	);
-};
-
-var Options = function Options(props) {
-
-	return _react2.default.createElement(
-		'div',
-		null,
-		_react2.default.createElement(
-			'button',
-			{ onClick: props.handleDeleteOptions },
-			' Remove all '
-		),
-		props.options.length === 0 && _react2.default.createElement(
-			'p',
-			null,
-			'Please add an option to get started!'
-		),
-		props.options.map(function (opt, i) {
-			return _react2.default.createElement(Option, {
-				key: i,
-				option: opt,
-				handleDeleteOption: props.handleDeleteOption
-			});
-		})
-	);
-};
-
-var AddOption = function (_React$Component2) {
-	_inherits(AddOption, _React$Component2);
-
-	function AddOption(props) {
-		_classCallCheck(this, AddOption);
-
-		var _this2 = _possibleConstructorReturn(this, (AddOption.__proto__ || Object.getPrototypeOf(AddOption)).call(this, props));
-
-		_this2.handleAddOption = _this2.handleAddOption.bind(_this2);
-		_this2.state = {
-			error: undefined
-		};
-		return _this2;
-	}
-
-	_createClass(AddOption, [{
-		key: 'handleAddOption',
-		value: function handleAddOption(e) {
-
-			e.preventDefault();
-
-			var option = e.target.elements.option.value.trim();
-			var error = this.props.handleAddOption(option);
-
-			this.setState(function () {
-				return { error: error };
-			});
-
-			if (!error) {
-				e.target.elements.option.value = '';
-			}
-		}
-	}, {
-		key: 'render',
-		value: function render() {
-			return _react2.default.createElement(
-				'div',
-				null,
-				this.state.error && _react2.default.createElement(
-					'p',
-					null,
-					' ',
-					this.state.error,
-					' '
-				),
-				_react2.default.createElement(
-					'form',
-					{ onSubmit: this.handleAddOption },
-					_react2.default.createElement('input', { type: 'text', name: 'option' }),
-					_react2.default.createElement(
-						'button',
-						null,
-						'Add Option'
-					)
-				)
-			);
-		}
-	}]);
-
-	return AddOption;
-}(_react2.default.Component);
-
-_reactDom2.default.render(_react2.default.createElement(IndecisionApp, null), document.getElementById('app'));
+_reactDom2.default.render(_react2.default.createElement(_IndecisionApp2.default, null), document.getElementById('app'));
 
 /***/ }),
-/* 31 */,
-/* 32 */,
-/* 33 */,
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */,
-/* 53 */,
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */,
-/* 59 */,
-/* 60 */,
-/* 61 */,
-/* 62 */,
-/* 63 */,
-/* 64 */,
-/* 65 */,
-/* 66 */,
-/* 67 */,
-/* 68 */,
-/* 69 */,
-/* 70 */,
-/* 71 */,
-/* 72 */,
-/* 73 */,
-/* 74 */,
-/* 75 */,
-/* 76 */,
-/* 77 */,
-/* 78 */,
-/* 79 */,
-/* 80 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1295,7 +970,7 @@ _reactDom2.default.render(_react2.default.createElement(IndecisionApp, null), do
  * LICENSE file in the root directory of this source tree.
  */
 
-var m=__webpack_require__(4),n=__webpack_require__(5),p=__webpack_require__(2),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
+var m=__webpack_require__(2),n=__webpack_require__(3),p=__webpack_require__(1),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
 function y(a){for(var b=arguments.length-1,e="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,c=0;c<b;c++)e+="\x26args[]\x3d"+encodeURIComponent(arguments[c+1]);b=Error(e+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}
 var z={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function A(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}A.prototype.isReactComponent={};A.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?y("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};A.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
 function B(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}function C(){}C.prototype=A.prototype;var D=B.prototype=new C;D.constructor=B;m(D,A.prototype);D.isPureReactComponent=!0;function E(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}var F=E.prototype=new C;F.constructor=E;m(F,A.prototype);F.unstable_isAsyncReactComponent=!0;F.render=function(){return this.props.children};var G={current:null},H=Object.prototype.hasOwnProperty,I={key:!0,ref:!0,__self:!0,__source:!0};
@@ -1310,7 +985,7 @@ isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_F
 
 
 /***/ }),
-/* 81 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1331,12 +1006,12 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var _assign = __webpack_require__(4);
-var emptyObject = __webpack_require__(5);
-var invariant = __webpack_require__(10);
-var warning = __webpack_require__(11);
-var emptyFunction = __webpack_require__(2);
-var checkPropTypes = __webpack_require__(23);
+var _assign = __webpack_require__(2);
+var emptyObject = __webpack_require__(3);
+var invariant = __webpack_require__(5);
+var warning = __webpack_require__(6);
+var emptyFunction = __webpack_require__(1);
+var checkPropTypes = __webpack_require__(7);
 
 // TODO: this is special because it gets imported during build.
 
@@ -2672,10 +2347,10 @@ module.exports = react;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 82 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2694,7 +2369,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 83 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2732,15 +2407,15 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(84);
+  module.exports = __webpack_require__(19);
 } else {
-  module.exports = __webpack_require__(87);
+  module.exports = __webpack_require__(22);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 84 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2756,7 +2431,7 @@ if (process.env.NODE_ENV === 'production') {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(9),l=__webpack_require__(24),B=__webpack_require__(4),C=__webpack_require__(2),ba=__webpack_require__(25),da=__webpack_require__(26),ea=__webpack_require__(27),fa=__webpack_require__(28),ia=__webpack_require__(29),D=__webpack_require__(5);
+var aa=__webpack_require__(4),l=__webpack_require__(8),B=__webpack_require__(2),C=__webpack_require__(1),ba=__webpack_require__(9),da=__webpack_require__(10),ea=__webpack_require__(11),fa=__webpack_require__(12),ia=__webpack_require__(13),D=__webpack_require__(3);
 function E(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:E("227");
 var oa={children:!0,dangerouslySetInnerHTML:!0,defaultValue:!0,defaultChecked:!0,innerHTML:!0,suppressContentEditableWarning:!0,suppressHydrationWarning:!0,style:!0};function pa(a,b){return(a&b)===b}
 var ta={MUST_USE_PROPERTY:1,HAS_BOOLEAN_VALUE:4,HAS_NUMERIC_VALUE:8,HAS_POSITIVE_NUMERIC_VALUE:24,HAS_OVERLOADED_BOOLEAN_VALUE:32,HAS_STRING_BOOLEAN_VALUE:64,injectDOMPropertyConfig:function(a){var b=ta,c=a.Properties||{},d=a.DOMAttributeNamespaces||{},e=a.DOMAttributeNames||{};a=a.DOMMutationMethods||{};for(var f in c){ua.hasOwnProperty(f)?E("48",f):void 0;var g=f.toLowerCase(),h=c[f];g={attributeName:g,attributeNamespace:null,propertyName:f,mutationMethod:null,mustUseProperty:pa(h,b.MUST_USE_PROPERTY),
@@ -2976,7 +2651,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
 
 
 /***/ }),
-/* 85 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2991,7 +2666,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
  * @typechecks
  */
 
-var isNode = __webpack_require__(86);
+var isNode = __webpack_require__(21);
 
 /**
  * @param {*} object The object to check.
@@ -3004,7 +2679,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 86 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3032,7 +2707,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 87 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3053,21 +2728,21 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var React = __webpack_require__(9);
-var invariant = __webpack_require__(10);
-var warning = __webpack_require__(11);
-var ExecutionEnvironment = __webpack_require__(24);
-var _assign = __webpack_require__(4);
-var emptyFunction = __webpack_require__(2);
-var EventListener = __webpack_require__(25);
-var getActiveElement = __webpack_require__(26);
-var shallowEqual = __webpack_require__(27);
-var containsNode = __webpack_require__(28);
-var focusNode = __webpack_require__(29);
-var emptyObject = __webpack_require__(5);
-var checkPropTypes = __webpack_require__(23);
-var hyphenateStyleName = __webpack_require__(88);
-var camelizeStyleName = __webpack_require__(90);
+var React = __webpack_require__(4);
+var invariant = __webpack_require__(5);
+var warning = __webpack_require__(6);
+var ExecutionEnvironment = __webpack_require__(8);
+var _assign = __webpack_require__(2);
+var emptyFunction = __webpack_require__(1);
+var EventListener = __webpack_require__(9);
+var getActiveElement = __webpack_require__(10);
+var shallowEqual = __webpack_require__(11);
+var containsNode = __webpack_require__(12);
+var focusNode = __webpack_require__(13);
+var emptyObject = __webpack_require__(3);
+var checkPropTypes = __webpack_require__(7);
+var hyphenateStyleName = __webpack_require__(23);
+var camelizeStyleName = __webpack_require__(25);
 
 /**
  * WARNING: DO NOT manually require this module.
@@ -18431,10 +18106,10 @@ module.exports = reactDom;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 88 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18449,7 +18124,7 @@ module.exports = reactDom;
 
 
 
-var hyphenate = __webpack_require__(89);
+var hyphenate = __webpack_require__(24);
 
 var msPattern = /^ms-/;
 
@@ -18476,7 +18151,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 89 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18512,7 +18187,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 90 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18527,7 +18202,7 @@ module.exports = hyphenate;
 
 
 
-var camelize = __webpack_require__(91);
+var camelize = __webpack_require__(26);
 
 var msPattern = /^-ms-/;
 
@@ -18555,7 +18230,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 91 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18588,6 +18263,413 @@ function camelize(string) {
 }
 
 module.exports = camelize;
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var AddOption = function (_React$Component) {
+	_inherits(AddOption, _React$Component);
+
+	function AddOption(props) {
+		_classCallCheck(this, AddOption);
+
+		var _this = _possibleConstructorReturn(this, (AddOption.__proto__ || Object.getPrototypeOf(AddOption)).call(this, props));
+
+		_this.handleAddOption = _this.handleAddOption.bind(_this);
+		_this.state = {
+			error: undefined
+		};
+		return _this;
+	}
+
+	_createClass(AddOption, [{
+		key: 'handleAddOption',
+		value: function handleAddOption(e) {
+
+			e.preventDefault();
+
+			var option = e.target.elements.option.value.trim();
+			var error = this.props.handleAddOption(option);
+
+			this.setState(function () {
+				return { error: error };
+			});
+
+			if (!error) {
+				e.target.elements.option.value = '';
+			}
+		}
+	}, {
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				null,
+				this.state.error && _react2.default.createElement(
+					'p',
+					null,
+					' ',
+					this.state.error,
+					' '
+				),
+				_react2.default.createElement(
+					'form',
+					{ onSubmit: this.handleAddOption },
+					_react2.default.createElement('input', { type: 'text', name: 'option' }),
+					_react2.default.createElement(
+						'button',
+						null,
+						'Add Option'
+					)
+				)
+			);
+		}
+	}]);
+
+	return AddOption;
+}(_react2.default.Component);
+
+exports.default = AddOption;
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Option = function Option(props) {
+	return _react2.default.createElement(
+		'div',
+		null,
+		props.option,
+		_react2.default.createElement(
+			'button',
+			{
+				onClick: function onClick(e) {
+					props.handleDeleteOption(props.option);
+				}
+			},
+			'remove'
+		)
+	);
+};
+
+exports.default = Option;
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Header = function Header(props) {
+	return _react2.default.createElement(
+		'div',
+		null,
+		_react2.default.createElement(
+			'h1',
+			null,
+			props.title
+		),
+		props.subtitle && _react2.default.createElement(
+			'h2',
+			null,
+			props.subtitle
+		)
+	);
+};
+
+Header.defaultProps = {
+	title: 'Some Deafult'
+};
+
+exports.default = Header;
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Action = function Action(props) {
+	return _react2.default.createElement(
+		'div',
+		null,
+		_react2.default.createElement(
+			'button',
+			{
+				onClick: props.handlePick,
+				disabled: !props.hasOptions
+			},
+			'What should I do?'
+		)
+	);
+};
+
+exports.default = Action;
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Option = __webpack_require__(28);
+
+var _Option2 = _interopRequireDefault(_Option);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Options = function Options(props) {
+
+	return _react2.default.createElement(
+		'div',
+		null,
+		_react2.default.createElement(
+			'button',
+			{ onClick: props.handleDeleteOptions },
+			' Remove all '
+		),
+		props.options.length === 0 && _react2.default.createElement(
+			'p',
+			null,
+			'Please add an option to get started!'
+		),
+		props.options.map(function (opt, i) {
+			return _react2.default.createElement(_Option2.default, {
+				key: i,
+				option: opt,
+				handleDeleteOption: props.handleDeleteOption
+			});
+		})
+	);
+};
+
+exports.default = Options;
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _AddOption = __webpack_require__(27);
+
+var _AddOption2 = _interopRequireDefault(_AddOption);
+
+var _Header = __webpack_require__(29);
+
+var _Header2 = _interopRequireDefault(_Header);
+
+var _Action = __webpack_require__(30);
+
+var _Action2 = _interopRequireDefault(_Action);
+
+var _Options = __webpack_require__(31);
+
+var _Options2 = _interopRequireDefault(_Options);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var IndecisionApp = function (_React$Component) {
+	_inherits(IndecisionApp, _React$Component);
+
+	function IndecisionApp(props) {
+		_classCallCheck(this, IndecisionApp);
+
+		var _this = _possibleConstructorReturn(this, (IndecisionApp.__proto__ || Object.getPrototypeOf(IndecisionApp)).call(this, props));
+
+		_this.handleDeleteOptions = _this.handleDeleteOptions.bind(_this);
+		_this.handleDeleteOption = _this.handleDeleteOption.bind(_this);
+		_this.handlePick = _this.handlePick.bind(_this);
+		_this.handleAddOption = _this.handleAddOption.bind(_this);
+		_this.state = {
+			options: props.options
+		};
+		return _this;
+	}
+
+	_createClass(IndecisionApp, [{
+		key: 'componentDidMount',
+		value: function componentDidMount() {
+			try {
+				var json = localStorage.getItem('options');
+				var options = JSON.parse(json);
+				if (options) {
+					this.setState(function () {
+						return { options: options };
+					});
+				}
+			} catch (e) {}
+		}
+	}, {
+		key: 'componentDidUpdate',
+		value: function componentDidUpdate(prevProps, prevState) {
+			if (prevState.options.length !== this.state.options.length) {
+				var json = JSON.stringify(this.state.options);
+				localStorage.setItem('options', json);
+			}
+		}
+	}, {
+		key: 'handleDeleteOptions',
+		value: function handleDeleteOptions() {
+			this.setState(function () {
+				return { options: [] };
+			});
+		}
+	}, {
+		key: 'handleDeleteOption',
+		value: function handleDeleteOption(optionToRemove) {
+
+			this.setState(function (prevState) {
+				return {
+					options: prevState.options.filter(function (option) {
+						return optionToRemove !== option;
+					})
+				};
+			});
+		}
+	}, {
+		key: 'handlePick',
+		value: function handlePick() {
+			if (this.state.options.length) {
+				var rand = Math.floor(Math.random() * this.state.options.length);
+				var option = this.state.options[rand];
+				console.log(option);
+			}
+		}
+	}, {
+		key: 'handleAddOption',
+		value: function handleAddOption(option) {
+			if (!option) {
+				return 'Enter valid value item';
+			} else if (this.state.options.indexOf(option) > -1) {
+				return 'This option already exists';
+			}
+
+			this.setState(function (prevState) {
+				return { options: prevState.options.concat(option) };
+			});
+		}
+	}, {
+		key: 'render',
+		value: function render() {
+			var title = 'Indecision App';
+			var subtitle = 'Put your life in the hands of a computer';
+
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(_Header2.default, {
+					title: title,
+					subtitle: subtitle
+				}),
+				_react2.default.createElement(_Action2.default, {
+					hasOptions: this.state.options.length > 0,
+					handlePick: this.handlePick
+				}),
+				_react2.default.createElement(_Options2.default, {
+					options: this.state.options,
+					handleDeleteOptions: this.handleDeleteOptions,
+					handleDeleteOption: this.handleDeleteOption
+				}),
+				_react2.default.createElement(_AddOption2.default, {
+					handleAddOption: this.handleAddOption
+				})
+			);
+		}
+	}]);
+
+	return IndecisionApp;
+}(_react2.default.Component);
+
+exports.default = IndecisionApp;
+
+
+IndecisionApp.defaultProps = {
+	options: []
+};
 
 /***/ })
 /******/ ]);
